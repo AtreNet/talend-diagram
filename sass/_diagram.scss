@@ -17,3 +17,28 @@
 		opacity: 1;
 	}
 }
+
+.diagram-content__wrap {
+	//display: none;
+}
+
+.diagram-content {
+	color: $color--gray;
+}
+
+// Tooltips
+.tooltipster-content {
+	max-width: 385px;
+	padding: 20px !important;
+	border: 0;
+	border-radius: 0;
+	background-color: #fafafa !important;
+	text-align: center;
+	box-shadow: 0 0 6px 3px rgba(0,0,0,0.1);
+}
+
+.tooltipster-box {
+	border: 0 !important;
+	border-radius: 14px !important;
+	background-color: transparent !important;
+}
