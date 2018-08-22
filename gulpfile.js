@@ -42,7 +42,7 @@
 				file.contents = browserify(file.path, {debug:true}).bundle();
 			}))
 			.pipe( buffer() )
-			.pipe(rename('bundle.dev.js'))
+			.pipe(rename('diagram.dev.js'))
 			.pipe(gulp.dest('./js'))
 			.pipe(livereload())
 	});
@@ -54,7 +54,7 @@
 			}))
 			.pipe(buffer())
 			.pipe(uglify())
-			.pipe(rename('bundle.prod.js'))
+			.pipe(rename('diagram.prod.js'))
 			.pipe(gulp.dest('./js'))
 	});
 
@@ -70,7 +70,7 @@
 			.pipe(sass({ outputStyle: 'nested' }))
 			.pipe(postcss(processors))
 			.pipe(sourcemaps.write())
-			.pipe(rename("main.dev.css"))
+			.pipe(rename("diagram.dev.css"))
 			.pipe(gulp.dest('./css/'))
 			.pipe(livereload())
 	});
@@ -87,7 +87,7 @@
 			.pipe(sourcemaps.init())
 			.pipe(sass({ outputStyle: 'nested' }))
 			.pipe(postcss(processors))
-			.pipe(rename("main.prod.css"))
+			.pipe(rename("diagram.prod.css"))
 			.pipe(gulp.dest('./css/'))
 	});
 
