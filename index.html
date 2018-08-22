@@ -31,6 +31,7 @@
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="/js/bundle.dev.js"></script>
 
 </head>
 
@@ -51,7 +52,7 @@
 						<div class="columns-container-wrapper">
 							<div class="columns-container">
 								<div class="columns" style="width: 100%;">
-									<div class="main-content">
+									<a class="main-content">
 
 
 
@@ -171,7 +172,7 @@
 
 
 														<!-- Talend Cloud -->
-														<path class="cls-6 cloud-diagram__item talend-cloud"
+														<path class="cls-6 cloud-diagram__item talend-cloud" data-tooltip-content="#tooltip--talend-cloud"
 															  d="M533.79,66.47c4,2.3,4,6.06,0,8.36L392.4,157A15.93,15.93,0,0,1,378,157L265.83,92.27c-4-2.3-4-6.06-.05-8.36L407.21,1.72a16,16,0,0,1,14.42,0Z"/>
 
 														<!-- Real-time -->
@@ -629,6 +630,24 @@
 
 
 										</div>
+
+
+
+
+
+										<!-- tooltips -->
+
+										<div class="diagram-content__wrap">
+
+											<div id="tooltip--talend-cloud" class="diagram-content">
+
+												<h3>Blah</h3>
+												<p>blah</p>
+
+											</div>
+
+										</div>
+
 
 
 
