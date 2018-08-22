@@ -9,9 +9,10 @@
     $('.cloud-diagram__item').tooltipster({
       animation: 'fade',
       delay: 100,
+      distance: -75,
       interactive: true,
       theme: 'tooltipster-shadow',
-      position: 'right'
+      side: 'right'
     });
   });
 
