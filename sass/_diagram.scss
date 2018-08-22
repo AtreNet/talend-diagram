@@ -13,7 +13,7 @@
 	cursor: pointer;
 
 	&:hover, &:focus {
-		fill: red;
+		fill: $color--green;
 		opacity: 1;
 	}
 }
