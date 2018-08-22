@@ -1,1 +1,1 @@
-.cloud-diagram{border:1px solid red}
+.cloud-diagram{border:1px solid red;max-width:1000px;width:100%}.cloud-diagram svg *{pointer-events:none}.cloud-diagram__item{cursor:pointer;pointer-events:all!important}.cloud-diagram__item:focus,.cloud-diagram__item:hover{fill:red;opacity:1}
