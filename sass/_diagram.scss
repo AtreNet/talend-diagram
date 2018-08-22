@@ -19,26 +19,65 @@
 }
 
 .diagram-content__wrap {
-	//display: none;
+	display: none;
 }
 
 .diagram-content {
+	height: auto;
+	padding: 35px;
 	color: $color--gray;
+
+	h2 {
+		margin-top: 0;
+		color: $color--dark-blue;
+		font-size: 18px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	a {
+		color: $color--blue;
+
+		&:hover, &:focus {
+			color: $color--dark-blue;
+		}
+	}
+
+	.button {
+		margin-top: 5px;
+		margin-right: 10px;
+		color: $color--white !important;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+}
+
+.diagram-content__ctas {
+	margin-bottom: 10px;
 }
 
 // Tooltips
 .tooltipster-content {
 	max-width: 385px;
-	padding: 20px !important;
+	height: auto;
+	padding: 0 !important;
 	border: 0;
 	border-radius: 0;
-	background-color: #fafafa !important;
-	text-align: center;
-	box-shadow: 0 0 6px 3px rgba(0,0,0,0.1);
+	background-color: $color--off-white !important;
+	box-shadow: none;
 }
 
 .tooltipster-box {
 	border: 0 !important;
-	border-radius: 14px !important;
+	border-radius: 0 !important;
 	background-color: transparent !important;
+}
+
+.tooltipster-arrow-background,
+.tooltipster-arrow-border {
+	border-right-color: $color--off-white !important;
 }
