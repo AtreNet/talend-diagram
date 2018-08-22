@@ -2,8 +2,12 @@
 	width: 100%;
 	max-width: 1000px;
 
-	svg * {
-		pointer-events: none;
+	svg {
+		width: 100%;
+
+		* {
+			pointer-events: none;
+		}
 	}
 }
 
@@ -76,7 +80,34 @@
 	background-color: transparent !important;
 }
 
-.tooltipster-arrow-background,
-.tooltipster-arrow-border {
-	border-right-color: $color--off-white !important;
+.tooltipster-top {
+	.tooltipster-arrow-background,
+	.tooltipster-arrow-border {
+		border-top-color: $color--off-white !important;
+	}
 }
+
+.tooltipster-right {
+	.tooltipster-arrow-background,
+	.tooltipster-arrow-border {
+		border-right-color: $color--off-white !important;
+	}
+}
+
+.tooltipster-bottom {
+	.tooltipster-arrow-background,
+	.tooltipster-arrow-border {
+		border-bottom-color: $color--off-white !important;
+	}
+}
+
+.tooltipster-left {
+	.tooltipster-arrow-background,
+	.tooltipster-arrow-border {
+		border-left-color: $color--off-white !important;
+	}
+}
+
+
+
+
